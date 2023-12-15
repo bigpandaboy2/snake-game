@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=VT323&display=swap" rel="stylesheet">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div>
+        <div class="scores">
+            <h1 id="score">000</h1>
+            <h1 id="highScore">000</h1>
+        </div>
+        <div class="game-border-1">
+            <div class="game-border-2">
+                <div class="game-border-3">
+                    <div id="game-board"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 id="instruction-text">Press spacebar to start the game</h1>
+    <p id="intro">Well, this is very raw game of online snake with 
+                   some basic movements and function. It record the 
+                   score on the left corner and your highest score on 
+                   the right. The food appears on random positions 
+                   and even spawns inside the snake! Since the game 
+                   is raw, it will be updated, and feel free to add
+                   some comments about the future alterations!
+    </p>
+    <img id="logo" src="snake-game-ai-gen.png" alt="snake-logo" />
+
+    <!-- 1. Reverse snake movement should be blocked. Now if snake length is 1 and you press arrow key opposite to the current movement direction  
+    the snake would go in that opposite direction and the snake is > 1 - it would reset the game which is obvious but would make players mad :)
+    2. Food generation should be adjusted so food would not generates inside the snake, 
+    for now it happens  sometime. Probably would use the same logic as in the collision detection function. -->
+
+
+</body>
+</html>
